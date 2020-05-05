@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>eSports- Survey Form</title> 
+    <meta name="author" content="Marcos Vinicius">
+    <meta name="description" content="This page serves the purpose of learning html and css">
+    <meta name="keywords" content="HTML, CSS">
+    <link rel="stylesheet" href="css/eSports.css" type="text/css">
+
+  </head>
+
+  <header><h1 id="title">Survey Form</h1></header>
+<body class="hero-image">
+<div id="formulary">
+  <p id="mainQuestion">
+    What are your eSports preferences?
+  </p>
+  <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name here" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email here">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="120" class="input-field" placeholder="Enter your Age here">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">What do you like most in eSports?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="liveStream">Watching Live stream</option>
+      <option value="tournaments">Pro-Tournaments</option>
+      <option value="playing">Single-playing</option>
+      <option value="multiPlayer">Multiplayer games</option>
+      
+    </select>
+        
+      </div>
+      
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">Should eSports get a place in the Olympics?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>It depends on...<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Undecided<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>No way!<input name="radio-buttons" value="4"  type="radio" class="userRatings" ></label></li><br>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">What types of games do you enjoy?<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Player vs. Player (PvP)</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">First Person Shooter (FPS)</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Real-time Strategy (RTS)</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Multiplayer Online Battle Arena (MOBA)</label></li>
+           
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any further information?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="My favorite eSports is...and why?"></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+  </div>
+  </body>
+</html>

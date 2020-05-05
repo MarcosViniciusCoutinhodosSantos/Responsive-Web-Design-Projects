@@ -1,0 +1,251 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  font-family: "Helvetica", Arial, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  margin-top: 0;
+  margin-left: 0;
+  background-color: black;
+  padding: 0.1em;
+  width: 100%
+}
+h2:focus {
+  background-color: red;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px white;
+}
+
+nav {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+ul {
+  padding: 0;
+  margin: 30 0 0 150px; 
+  list-style: none;
+}
+li {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo img {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+nav a {
+  width: 100px;
+  display: block;
+  padding: 20px 70px;
+  text-decoration: none;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: rgba(147, 112, 219, 0.8);
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+#content {
+  background:#eee;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-style: solid;
+  
+}
+
+.item {
+  height: 200px;
+  width: 300px;
+  color: black;
+  -webkit-box-shadow: 0px 2px 8px -1px rgba (0,0,0,0.24);
+  background: #ffd149;
+  margin: 5px;
+  border-radius: 10px;
+  border-style: solid;
+  box-shadow: 5px 10px 18px #888888; 
+}
+
+@media screen and (max-width: 400px) {
+  #content {
+    flex-direction: column;
+  }
+}
+
+.button {
+  background-color: black;
+  opacity: 0.7;
+  display: inline-block;
+  height: 100px;
+  width: 400px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: -45px auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-838386570-1544458219.png");
+  background-size: cover;
+  background-positior: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  
+}
+.hero .btn {
+    display: inline-block;
+    width: 155px;
+    height: 80px;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: 8px 10px 10px -1px;
+    padding: 1.8em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    background-color:rgba(147, 112, 219, 0.8);
+    cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  text-decoration: bold;
+  font-size: 1.6em;
+  text-shadow: 1px 1px white;
+  font-weight: bold;
+ 
+}
+
+.grid {
+  display: flex;
+}
+
+#features {
+  margin-top: 20px;
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+    
+
+    @media (max-width: 550px) {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    margin-top: 0;
+  }
+}
+
+#services {
+  margin-top: 60px;
+  flex-direction: row;
+  font-size: 25px;
+}
+#services-header {
+  font-weight: bold;
+  outline-color: red;
+  outline-style: solid;
+  background-color: red;
+  color: white;
+  text-shadow: 2px 1px black;
+}
+
+#bestprice {
+  font-weight: bold;
+  outline-color: red;
+  outline-style: solid;
+  background-color: red;
+  color: white;
+  margin: 1px 100px 10px 20px;
+  text-shadow: 2px 1px black;
+  
+}
+
+#how-it-works {
+  margin-top: 30px;
+  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#about {
+  margin: auto;
+  color: black;
+  font-size: 2.1em;
+  text-shadow: 2px 1px white;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  color: rgba(147, 112, 219, 0.8);
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px white;
+}

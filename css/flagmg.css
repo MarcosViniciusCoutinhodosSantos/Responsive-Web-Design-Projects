@@ -1,0 +1,66 @@
+html,body {
+  background-color: #fcfcfc;
+  text-align: center;
+  font-family: "Helvetica", sans-serif;
+  min-width: 320px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+.hero-image {
+  background-image: url("http://observatoriodaimprensa.com.br/wp-content/uploads/2015/11/Tragedia-de-Mariana-01-Foto-Corpo-de-Bombeiros-de-MG.png");
+  background-color: #fcfcfc;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.triangle-up {
+  width: 1px;
+	height: 1px;
+  margin: 100px auto;
+  position: relative;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 300px solid #FF4136;
+  opacity: 0.6;
+}
+
+div {
+  width: 100px;
+  height: 60px;
+  font-size: 50px;
+  text-shadow: 2px 1px white;
+  color: #FF4136;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 10s infinite; 
+  animation: mymove 10s infinite;
+}
+
+#word1 {-webkit-animation-timing-function: linear;}
+#word2 {-webkit-animation-timing-function: ease;}
+#word3 {-webkit-animation-timing-function: ease-in;}
+
+#word1 {animation-timing-function: linear;}
+#word2 {animation-timing-function: ease;}
+#word3 {animation-timing-function: ease-in;}
+
+
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 400px;}
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 400px;}
+}
+.nowrap {
+    white-space: nowrap;
+}
